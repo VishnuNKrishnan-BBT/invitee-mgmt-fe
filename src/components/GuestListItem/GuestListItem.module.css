@@ -1,0 +1,32 @@
+.wrapper{
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid rgb(92, 92, 92);
+    padding: 15px 0;
+}
+
+.main{
+    font-size: 25px;
+    font-weight: 500;
+    color: #eee;
+}
+
+.sub1{
+    font-size: 18px;
+    font-weight: 200;
+    color: #a9a9a9;
+}
+
+.sub2{
+    font-size: 13px;
+    font-weight: 200;
+    color: #838282;
+}
+
+.notes{
+    font-size: 13px;
+    font-weight: 200;
+    font-style: italic;
+    color: #838282;
+    margin-top: 20px;
+}

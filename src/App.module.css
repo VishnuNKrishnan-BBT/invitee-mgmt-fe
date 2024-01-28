@@ -1,0 +1,15 @@
+.wrapper{
+  padding: 10px;
+  height: 100vh;
+  width: 100%;
+  /* border: 2px solid red; */
+  background: rgb(17,17,17);
+  background: linear-gradient(56deg, rgba(17,17,17,1) 0%, rgba(46,45,45,1) 100%);
+  /* overflow: hidden; */
+}
+
+.heading{
+  color: #eee;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}

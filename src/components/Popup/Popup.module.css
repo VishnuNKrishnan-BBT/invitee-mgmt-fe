@@ -1,0 +1,101 @@
+.backdropWrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    backdrop-filter: blur(10px);
+    animation: backdropLoadIn 0.2s 1 ease-in;
+}
+
+.backdropWrapperLoadOut{
+    animation: backdropLoadOut 0.2s 1 ease-out;
+}
+
+.contentWrapper{
+    height: fit-content;
+    /* border: 2px solid green; */
+    width: 40vw;
+    padding: 30px;
+    border-radius: 30px;
+    background: rgb(17,17,17);
+    background: linear-gradient(56deg, rgba(17,17,17,1) 0%, rgba(46,45,45,1) 100%);
+    animation: popupLoadInDesktop 0.2s 1 ease-in;
+}
+
+.contentWrapperLoadOut{
+    animation: popupLoadOut 0.2s 1 ease-out;
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    .backdropWrapper{
+        align-items: flex-end;
+        position: absolute;
+    }
+
+    .contentWrapper{
+        height: 700px;
+        width: 100%;
+        padding: 20px 10px;
+        border-radius: 30px 30px 0 0;
+        position: relative;
+        bottom: 0px;
+        animation: popupLoadInMobile 0.2s 1 ease-in-out;
+    }
+
+    .contentWrapperLoadOut{
+        animation: popupLoadOutMobile 0.2s 1 ease-out !important;
+    }
+}
+
+@keyframes backdropLoadIn{
+    0%{
+        backdrop-filter: blur(0px);
+    }
+    100%{
+        backdrop-filter: blur(10px);
+    }
+}
+
+@keyframes backdropLoadOut{
+    0%{
+        backdrop-filter: blur(10px);
+    }
+    100%{
+        backdrop-filter: blur(0px);
+    }
+}
+
+@keyframes popupLoadInDesktop{
+    0%{
+        opacity: 0%;
+        transform: scale(80%);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(100%);
+    }
+}
+
+@keyframes popupLoadInMobile{
+    0%{
+        bottom: -700px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes popupLoadOutMobile{
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: -700px;
+    }
+}

@@ -1,0 +1,27 @@
+.wrapper{
+    padding: 3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 5px;
+    display: inline;
+    font-weight: 200;
+    font-size: 13px;
+    text-wrap: nowrap;
+}
+
+.high{
+    background-color: rgb(151, 23, 0);
+    color: #eee;
+}
+
+.mid{
+    background-color: rgb(145, 103, 14);
+    color: #eee;
+}
+
+.low{
+    background-color: rgb(32, 126, 10);
+    color: #eee;
+}

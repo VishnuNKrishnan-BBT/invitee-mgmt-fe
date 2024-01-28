@@ -1,0 +1,17 @@
+.wrapper{
+    height: fit-content;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    overflow: scroll;
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        height: calc(100vh - 80px);
+    }
+}
