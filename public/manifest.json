@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Invitations Manager",
+  "name": "Keep track of guests and invitations",
   "icons": [
     {
       "src": "favicon.ico",
